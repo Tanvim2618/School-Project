@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>YpsPatiala</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--Favicon -->
+	<link rel="icon" type="image/png" href="images/ypslogo.jpg" />
+		
+	<!-- CSS Files -->
+		
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- End CSS Files -->
+	<style>
+		.dropdown:hover .dropdown-menu{
+			display: block;
+		}
+		.dropdown-menu{
+			margin-top: 0;
+		}
+		
+	</style>
+	<script>
+	$(document).ready(function(){
+		$(".dropdown").hover(function(){
+			var dropdownMenu = $(this).children(".dropdown-menu");
+			if(dropdownMenu.is(":visible")){
+				dropdownMenu.parent().toggleClass("open");
+			}
+		});
+	});     
+	</script>
+	
+
+</head>
+
+<body style="overflow-x: hidden;">
+<div>
+	<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+		
+		<a href="/"><img src="images/ypv23.png" style="width: 70%;" alt="myimage"/></a>
+		
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarText">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<div class="dropdown">
+					<button class="btn btn-dark" type="button" id="About YPS"  aria-expanded="false">
+						<a class="text-light" href="/">Home</a>
+					</button>
+			</li>
+			<li class="nav-item">
+				<div class="dropdown">
+					<button class="btn btn-dark dropdown-toggle" type="button" id="About YPS" data-toggle="dropdown" aria-expanded="false">
+					  About YPS
+					</button>
+					<div class="dropdown-menu bg-secondary" aria-labelledby="About YPS">
+						<a class="dropdown-item bg-secondary" href="/yps_foundation">YPS Foundation </a>
+						<a class="dropdown-item bg-secondary" href="/our_founder">Our Founder </a>
+						<a class="dropdown-item bg-secondary" href="/board_members">Board Members </a>
+						<a class="dropdown-item bg-secondary" href="/vision">School Vision and Objective</a>
+						<a class="dropdown-item bg-secondary" href="/head_master">Director's Foreword</a>
+						<a class="dropdown-item bg-secondary" href="/view_management">School Management</a>
+						<a class="dropdown-item bg-secondary" href="/staff">Staff </a>
+					</div>
+				  </div>
+			</li>
+
+			<li class="nav-item">
+				<div class="dropdown">
+					<button class="btn btn-dark dropdown-toggle" type="button" id="Admissions" data-toggle="dropdown" aria-expanded="false">
+					  Admissions
+					</button>
+					<div class="dropdown-menu bg-secondary" aria-labelledby="Admissions">
+						<a class="dropdown-item bg-secondary" href="/admission_procedure">Admission Procedure </a>
+						<!-- <a class="dropdown-item bg-secondary" href="/register_online">Register Online </a>
+						<a class="dropdown-item bg-secondary" href="/download_forms">Download Forms</a>
+						<a class="dropdown-item bg-secondary" href="/school_prospectus">School Prospectus</a> -->
+						<a class="dropdown-item bg-secondary" href="/fees_structure">Fees Structure</a>
+						<!-- <a class="dropdown-item bg-secondary" href="/syllabus">Syllabus</a>
+						<a class="dropdown-item bg-secondary" href="/foundation_wing_admissions">Foundation Wing Admissions </a> -->
+					</div>
+				  </div>
+			</li>
+
+			<li class="nav-item">
+				<div class="dropdown">
+					<button class="btn btn-dark dropdown-toggle" type="button" id="Facilities" data-toggle="dropdown" aria-expanded="false">
+					  Facilities
+					</button>
+					<div class="dropdown-menu bg-secondary" aria-labelledby="Facilities">
+						<a class="dropdown-item bg-secondary" href="/school_campus">School Campus</a>
+						<a class="dropdown-item bg-secondary" href="/academics">Academics</a>
+						<a class="dropdown-item bg-secondary" href="/sports_games">Sports and Games</a>
+						<a class="dropdown-item bg-secondary" href="/activities">Activities</a>
+						<a class="dropdown-item bg-secondary" href="/boarding">Boarding</a>
+					</div>
+				  </div>
+			</li>
+
+			<li class="nav-item">
+				<div class="dropdown">
+					<button class="btn btn-dark dropdown-toggle" type="button" id="Academics" data-toggle="dropdown" aria-expanded="false">
+					  Academics
+					</button>
+					<div class="dropdown-menu bg-secondary" aria-labelledby="Academics">
+						<a class="dropdown-item bg-secondary" href="/roll_of_honours">Roll of Honours</a>
+				  </div>
+			</li>
+
+			<li class="nav-item">
+				<div class="dropdown">
+					<button class="btn btn-dark dropdown-toggle" type="button" id="Alumni" data-toggle="dropdown" aria-expanded="false">
+					  Alumni
+					</button>
+					<div class="dropdown-menu bg-secondary" aria-labelledby="Alumni">
+						<!-- <a class="dropdown-item bg-secondary" href="/alumni_platform">Alumni Platform</a> -->
+						<a class="dropdown-item bg-secondary" href="/about_ayosa">About Ayosa</a>
+				  </div>
+			</li>
+
+			<li class="nav-item">
+				<div class="dropdown">
+					<button class="btn btn-dark" type="button" id="About YPS" aria-expanded="false">
+					  <div><a class="text-light " href="/internationalism">Internationalism</a></div>
+					</button>
+			</li>
+
+			<li class="nav-item">
+				<div class="dropdown">
+					<button class="btn btn-dark" type="button" id="About YPS"  aria-expanded="false">
+						<a class="text-light" href="/covid_adaptation">Covid-19 Adaptation</a>
+					</button>
+			</li>
+
+			<!-- <li class="nav-item">
+				<div class="dropdown">
+					<button class="btn btn-dark" type="button" id="About YPS"  aria-expanded="false">
+					<a class="text-light" href="/blog">Blog</a>
+					</button>
+			</li> -->
+			
+			<li class="nav-item">
+				<div class="dropdown">
+					<button class="btn btn-dark" type="button" id="About YPS"  aria-expanded="false">
+						<a class="text-light" href="/contact">Contact</a>
+					</button>
+			</li>
+			
+		</ul>
+
+		</div>
+	  </nav>
+</div>	

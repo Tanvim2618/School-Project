@@ -1,0 +1,50 @@
+<%- include("../partials/header") %>
+
+<div class="container" style="background-color:#fff;">
+    		
+    <div class="row bg-light mt-5">
+        <div class="col-md-12">
+            <div class="widget-item prevt slideinright mt-2" style="background:#018C84; margin-top:0;">
+                <h2 class="welcome-text" style="color:#fff;"><%= heading %></h2>
+                <hr>
+            </div>
+            <% let i=0; %>
+            <% data.forEach(function(current_data){ %>
+
+            <div class="widget-item" style="margin:0;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-8 slideinleft">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="widget-item" style="border-right:1px solid #d5dbe0 !important; margin:0;">
+                                           <h3> <%= subtopics[i]%> </h3>
+                                            <p><%= data[i]%></p>
+                                        </div> <!-- /.widget-item -->
+                                    </div> <!-- /.col-md-12 -->
+                                </div> <!-- /.row -->
+                            </div> <!-- /.col-md-8 -->
+    
+         <!-- Here begin Sidebar -->
+                            <% if(images[i] && images[i]!=""){ %>             
+                                <div class="col-md-4 slideinright">
+                                    <div class="widget-main" style="margin:0;">
+                                        <div class="widget-inner mt-2">
+                                            <img src="/images/templateImages/<%=images[i]%>" style="  border: 1px solid #cccccc;width: 300px;height: 210px; padding: 5px;">
+                                        </div> <!-- /.widget-inner -->
+                                    </div> <!-- /.widget-main -->
+                                </div>
+                            <%}%>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% i=i+1;  }) %>
+
+        </div>
+    </div>
+</div>
+
+
+<%- include("../partials/footer") %>
